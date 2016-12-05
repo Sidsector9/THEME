@@ -1,0 +1,263 @@
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/*==================================*\
+ * ## Global
+\*==================================*/
+.epanel {
+  padding: 2rem 0;
+}
+
+/*==================================*\
+ * ## Navigation 
+\*==================================*/
+.navbar {
+  margin-bottom: 0 !important;
+  font-size: 15px;
+  font-family: "Tahoma";
+}
+.navbar a {
+  color: #333 !important;
+}
+.navbar a:hover {
+  color: #993408 !important;
+}
+
+.navbar-brand {
+  padding: 20px 15px !important;
+}
+
+.navbar-default {
+  background: #fff !important;
+  border: none;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background: transparent !important;
+  background-image: none !important;
+  background-color: none !important;
+  box-shadow: none !important;
+}
+
+.header-map-bg {
+  background: url("../../images/body-map.jpg");
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+/*==================================*\
+ * ## Slider Panel
+\*==================================*/
+.epanel-1 {
+  background-color: #949599;
+}
+
+/*==================================*\
+ * ## Child Pages
+\*==================================*/
+.border-wrapper {
+  border: 1px solid #d8d8d8;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+.child-pages-container {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.child-pages-container:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: #ebebeb;
+  border-right: 1px solid #d8d8d8;
+  z-index: -1;
+}
+
+.border-wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.border-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.border-wrapper .sub-page > li {
+  position: relative;
+  margin-bottom: 1rem;
+  font-family: "Georgia";
+  font-size: 17px;
+  color: #a55417;
+}
+.border-wrapper .sub-page > li:before {
+  display: none;
+  position: absolute;
+  content: '';
+  background-color: #a55417;
+  top: 0;
+  left: -15px;
+  width: 15px;
+  height: 100%;
+}
+.border-wrapper .sub-page > li:after {
+  display: none;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 100%;
+  width: 15px;
+  height: 100%;
+  background: url("../../images/brown-notch.png");
+  background-position: 0 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.border-wrapper .sub-page > li:hover {
+  background-color: #a55417;
+  color: #fff;
+}
+.border-wrapper .sub-page > li:hover:before {
+  display: block;
+}
+.border-wrapper .sub-page > li:hover:after {
+  display: block;
+}
+
+.border-wrapper .title {
+  font-family: "Georgia";
+  font-size: 15px;
+  color: #000;
+  line-height: 1.4;
+}
+.border-wrapper .excerpt {
+  font-family: "Tahoma";
+  font-size: 13px;
+  color: #333;
+}
+
+.sub-sub-page {
+  padding: 15px 0 !important;
+  margin: 0 -15px !important;
+}
+
+.sub-page li:hover {
+  color: red;
+}
+
+.sub-sub-page {
+  display: none;
+}
+.sub-sub-page:nth-child(1) {
+  display: block;
+}
+
+/*==================================*\
+ * ## Footer 
+\*==================================*/
+#colophon {
+  background-color: #f8f8f8;
+  border-top: 1px solid #e3e3e3;
+}
+#colophon .footer-widgets {
+  padding: 2rem 0;
+  border-bottom: 1px solid #e3e3e3;
+}
+#colophon .widget {
+  font-family: "Tahoma";
+  font-size: 13px;
+  color: #888;
+  line-height: 1.65;
+}
+#colophon .widget img {
+  margin: 1rem 0;
+}
+#colophon .widget ul {
+  margin-left: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#colophon .widget a {
+  color: #888;
+  text-decoration: none;
+}
+#colophon .widget a:hover {
+  color: #993408;
+}
+#colophon .widget .widget-title {
+  font-family: "Tahoma";
+  font-size: 15px;
+  color: #888;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px dashed;
+  padding-bottom: .5rem;
+  margin-bottom: 1.5rem;
+}
+#colophon .footer-menu-and-info {
+  background-color: #fff;
+  font-family: "Tahoma";
+  font-size: 13px;
+}
+#colophon .footer-menu-and-info ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#colophon .footer-menu-and-info ul:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+#colophon .footer-menu-and-info li {
+  float: left;
+  margin-right: 2rem;
+}
+#colophon .footer-menu-and-info a {
+  color: #666;
+  text-decoration: none;
+}
+#colophon .footer-menu-and-info a:hover {
+  color: #993408;
+}
+#colophon .footer-menu-and-info .footer-map-bg {
+  padding: 2rem 0;
+  background: url("../../images/body-map.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+#colophon .footer-menu-and-info .site-info {
+  display: block;
+  margin-top: 1rem;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .child-pages-container:after {
+    padding-bottom: 0;
+    height: 100%;
+  }
+
+  #colophon .footer-menu-and-info li {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: .5rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

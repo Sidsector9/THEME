@@ -1,0 +1,11 @@
+# Untracked SCSS files
+*.scss
+
+# Untracked css.map files
+*.css.map
+
+# Untracked css files
+front.css
+global.css
+universal.css
+util.css
