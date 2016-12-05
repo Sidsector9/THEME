@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
-Euclid Theme
+Euclid Theme - Simple PSD to WordPress Theme Assignment
 ============
 
 Euclid theme is based on the [**underscores**](http://underscores.me/) starter theme created by [**Automattic**](https://automattic.com/).
