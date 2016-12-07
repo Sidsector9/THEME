@@ -4,7 +4,7 @@ Euclid Theme - Simple PSD to WordPress Theme Assignment
 ============
 
 Euclid theme is based on the [**underscores**](http://underscores.me/) starter theme created by [**Automattic**](https://automattic.com/).
-The theme assignment can be found [**here**](http://nomnom99.dollarwp.com/)
+The theme assignment can be found [**here**](http://nomnom99.dollarwp.com/).
 
 ### 1. Theme Structure
 Below are the list of folders that are additionally added to the underscores starter theme.
