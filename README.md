@@ -14,7 +14,7 @@ Below are the list of folders that are additionally added to the underscores sta
     * `js`
 
 ### 2. Demo website
-The demo website runs on additional 3 plugins to make the website fully functional as per the requirements described in the assignment.
+The demo website runs on additional **5** plugins to make the website fully functional as per the requirements described in the assignment.
 
 #### 2.1 Plugin list
 * `euclid-slider` creates a Custom Post Type **'Euclid Slider'** and gives a shortcode `[euclid_slider]` feature to display the slider through post content. (*See front page of the demo website*)
