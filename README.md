@@ -28,7 +28,7 @@ The demo website runs on additional **4** plugins to make the website fully func
 * **Site info text** can be set through Customizer.
 
 ### 4. Additional details about the theme
-The default `style.css` stylesheet in untouched. All the theme styling (*if any*) is written in `/lib/css/main.css`
-and all the javascript code (*if any*) is written in `/lib/js/euclid-custom-script.js`
+The default `style.css` stylesheet is untouched. All the theme styling (*not part of the plugins*) is written in `/lib/css/main.css`
+and all the javascript code (*not part of the plugins*) is written in `/lib/js/euclid-custom-script.js`
 
 **Stylesheets** and **Javascript** files of the custom widgets and plugins as listed in section **2.1** are part of their respective plugin directories.
