@@ -44,7 +44,7 @@
 				                )
 				            );
 				        ?>
-				        <span class="site-info">&copy; <?php echo date( 'Y' ); ?> rtPanel. All Rights Reserved. Designed by rtCamp.</span>
+				        <span class="site-info"><?php echo get_theme_mod( 'site_info_setting' ); ?></span>
 					</div>
 					<div class="col-sm-3">
 						<img src="<?php echo get_theme_mod( 'footer_logo_setting' ); ?>" alt="">

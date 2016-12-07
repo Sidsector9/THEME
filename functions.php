@@ -195,10 +195,21 @@ require get_template_directory() . '/inc/jetpack.php';
 require get_template_directory() . '/lib/bootstrap/php/wp_bootstrap_navwalker.php';
 
 /**
+ * Add support for excerpt in pages.
+ */
+add_action( 'init', 'my_add_excerpts_to_pages' );
+function my_add_excerpts_to_pages() {
+	add_post_type_support( 'page', 'excerpt' );
+}
+
+/**
  * WordPress customizer setting for footer logo.
  */
 add_action( 'customize_register', 'euclid_theme_customize_register' );
 function euclid_theme_customize_register( $wp_customize ) {
+	/*
+	* Header/Footer logo
+    */
 	$wp_customize->add_section( 'header_footer_logo_upload' , array(
 	    'title'      => __( 'Header/Footer Logo', 'euclid' ),
 	    'priority'   => 30,
@@ -209,7 +220,7 @@ function euclid_theme_customize_register( $wp_customize ) {
 	    'transport'   => 'refresh',
 	), array( 'sanitize_callback' => '__return_false' ) );
 
-   $wp_customize->add_control( new WP_Customize_Upload_Control( $wp_customize, 'header_logo_control', array(
+   $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'header_logo_control', array(
 			'label'       =>  __( 'Header Logo', 'euclid' ),
 			'description' =>  __( 'A resolution of 277 x 85 is recommended.', 'euclid' ),
 			'section'     =>  'header_footer_logo_upload',
@@ -222,11 +233,33 @@ function euclid_theme_customize_register( $wp_customize ) {
 	    'transport'   => 'refresh',
 	), array( 'sanitize_callback' => '__return_false' ) );
 
-   $wp_customize->add_control( new WP_Customize_Upload_Control( $wp_customize, 'footer_logo_control', array(
+   $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'footer_logo_control', array(
 			'label'       =>  __( 'Footer Logo', 'euclid' ),
 			'description' =>  __( 'A resolution of 194 x 60 is recommended.', 'euclid' ),
 			'section'     =>  'header_footer_logo_upload',
 			'settings'    =>  'footer_logo_setting',
 		) ) 
+	);
+
+   /*
+	* Site info
+    */
+   $wp_customize->add_section( 'site_info_section' , array(
+	    'title'      => __( 'Site Info text', 'euclid' ),
+	    'priority'   => 30,
+	) );
+
+   $wp_customize->add_setting( 'site_info_setting' , array(
+					    'default'     => '',
+					    'transport'	  => 'postMessage',
+					) );
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'converse_mi1', array(
+	            'label'          => __( 'Set site info text', 'converse' ),
+	            'section'        => 'site_info_section',
+	            'settings'       => 'site_info_setting',
+	            'type'           => 'text',
+	        )
+	    )
 	);
 }
