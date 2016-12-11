@@ -33,4 +33,4 @@ and all the javascript code (*not part of the plugins*) is written in `/lib/js/e
 
 **Stylesheets** and **Javascript** files of the custom widgets and plugins as listed in section **2.1** are part of their respective plugin directories.
 
-The **4** plugins used in this theme can be downloaded from [here](https://drive.google.com/drive/folders/0B44mLByWN9gja0lVa0dpa0VnUW8?usp=sharing) 
+The **4** plugins used in this theme can be downloaded from [**here**](https://drive.google.com/drive/folders/0B44mLByWN9gja0lVa0dpa0VnUW8?usp=sharing) 
