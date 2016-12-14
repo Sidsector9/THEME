@@ -21,7 +21,7 @@ The demo website runs on additional **4** plugins to make the website fully func
 * `euclid-slider` creates a Custom Post Type **'Euclid Slider'** and gives a shortcode `[euclid_slider]` feature to display the slider through post content. (*See front page of the demo website*)
 * `euclid-child-pages` gives a shortcode `[child_pages]` which displays child and grand-child pages of a page. (*See below the slider*)
 * `euclid-posts-widget` creates a widget to select category and displays posts from the selected category. (*See footer of the demo website*)
-* `stay-in-touch` creates a widget to add social media links. (*See footer of the demo website*)
+* `euclid-stay-in-touch` creates a widget to add social media links. (*See footer of the demo website*)
 
 ### 3. Customizer Options
 * **Header/Footer** logo can be added through the customizer. (*default image option available*).
